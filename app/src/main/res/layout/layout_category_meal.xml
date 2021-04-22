@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/img_thumb_layout_category"
+            android:layout_width="match_parent"
+            android:src="@drawable/ic_blank_image"
+            android:layout_centerHorizontal="true"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:layout_below="@id/img_thumb_layout_category"
+            android:id="@+id/tv_name_layout_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="@string/empty_value"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tv_desc_layout_catogory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            expandableTextView:maxCollapsedLines="10"
+            expandableTextView:animDuration="200"
+            android:layout_below="@id/tv_name_layout_category">
+
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:hint="@string/empty_value"
+                android:textColor="#666666" />
+
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_gravity="right|bottom"
+                android:background="@android:color/transparent"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+        <Button
+            android:id="@+id/btn_get_meal_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_alignParentRight="true"
+            android:text="@string/get_meal"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
