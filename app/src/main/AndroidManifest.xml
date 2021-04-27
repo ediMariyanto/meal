@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.edimariyanto.bvk">
+    package="com.edimariyanto.meal">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,11 +13,11 @@
         android:theme="@style/Theme.TestMvvm"
         android:usesCleartextTraffic="true">
 
-        <activity android:name=".ui.search.SearchMealActivity"/>
-        <activity android:name=".ui.detail.DetailActivity" />
-        <activity android:name=".ui.meal.MealActivity" />
-        <activity android:name=".ui.category.CategoryActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.edimariyanto.meal.ui.search.SearchMealActivity"/>
+        <activity android:name="com.edimariyanto.meal.ui.detail.DetailActivity" />
+        <activity android:name="com.edimariyanto.meal.ui.meal.MealActivity" />
+        <activity android:name="com.edimariyanto.meal.ui.category.CategoryActivity" />
+        <activity android:name="com.edimariyanto.meal.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

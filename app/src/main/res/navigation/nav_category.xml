@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.edimariyanto.bvk.ui.category.CategoryFragment"
+        android:name="com.edimariyanto.meal.ui.category.CategoryFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_category" >
         <action
@@ -17,7 +17,7 @@
 
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.edimariyanto.bvk.ui.category.RegisterFragment"
+        android:name="com.edimariyanto.meal.ui.category.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
 </navigation>

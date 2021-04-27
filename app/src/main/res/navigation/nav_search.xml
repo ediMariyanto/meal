@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/searchMealFragment"
-        android:name="com.edimariyanto.bvk.ui.search.SearchMealFragment"
+        android:name="com.edimariyanto.meal.ui.search.SearchMealFragment"
         android:label="fragment_search_meal"
         tools:layout="@layout/fragment_search_meal" />
 </navigation>
